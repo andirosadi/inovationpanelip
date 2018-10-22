@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\User;
 use App\Inovasi;
-use App\Role;
 use DB;
 
 class EvaluatorController extends Controller
@@ -64,9 +64,9 @@ class EvaluatorController extends Controller
      */
     public function edit($id)
     {
-        //Tambah Revisi
-        $evaluator = Inovasi::where('id', $id)->get();
-        return view('evaluator.addrevision', compact('evaluator'));
+      //Tambah Revisi
+      $inovasi = Inovasi::where('id', $id)->get();
+      return view('evaluator.addrevision', compact('inovasi'));
     }
 
     /**
@@ -78,12 +78,12 @@ class EvaluatorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //Save Revisi
-        $evaluator = Inovasi::where('id', $id)->first();
-        $evaluator->revisi = $request->revisi;
-        $evaluator->status = $request->status;
-        $evaluator->save();
-        return redirect()->route('evaluators.index')->with('alert-success', 'Berhasil menambahkan revisi');
+      //Save Revisi
+      $inovasi = Inovasi::where('id', $id)->first();
+      $inovasi->revisi = $request->revisi;
+      $inovasi->status = $request->status;
+      $inovasi->save();
+      return redirect()->route('evaluators.index')->with('alert-success', 'Berhasil menambahkan revisi');
     }
 
     /**

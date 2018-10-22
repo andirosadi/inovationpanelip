@@ -86,6 +86,7 @@
                                     <td>{{$user->full_name}}</td>
                                     <td>{{$user->email}}</td>
                                     <td>
+                                      <div class="card-title m-b-0">
                                         <form action="{{url('admin/'.$user->id)}}" method="post">
                                           <a href="{{url('admin/'.$user->id).'/edit'}}"  class="btn btn-warning btn-sm">Edit</a>
                                           <a href="{{url('resetpassword/'.$user->id).'/edit'}}"  class="btn btn-primary btn-sm">Reset Password</a>
@@ -93,6 +94,7 @@
                                           {{method_field('DELETE')}}
                                           <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this user?');" >Delete</button>
                                         </form>
+                                      </div>
                                     </td>
                                   </tr>
                                   @endforeach

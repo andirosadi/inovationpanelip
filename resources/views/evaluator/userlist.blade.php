@@ -42,8 +42,10 @@
                                     <td>{{$inovasi->revisi}}</td>
                                     <td>{{$inovasi->status}}</td>
                                     <td>
-                                      <a href="{{route('evaluators.edit', $inovasi->id)}}"  class="btn btn-warning btn-sm">Revisi</a>
+                                      <div class="card-title m-b-0">
+                                      <a href="{{route('evaluators.edit', $inovasi->id)}}"  class="btn btn-warning btn-sm">Tambah Revisi</a>
                                       <a href=""  class="btn btn-primary btn-sm">Print</a>
+                                    </div>
                                     </td>
                                   </tr>
                                   @endforeach
