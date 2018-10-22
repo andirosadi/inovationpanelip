@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Inovasi;
+use DB;
 
 class InovasiController extends Controller
 {
@@ -14,9 +16,10 @@ class InovasiController extends Controller
      */
     public function index()
     {
-        //Tampil Inovasi
-        $inovasi = Inovasi::all();
-        return view ('inovator.inovationlist', compact('inovasi'));
+        $inovasi = DB::table('inovasi')
+          ->where('inovasi.user_id', '=', Auth::user()->id)
+          ->get();
+          return view('inovator.inovationlist',['inovasi'=>$inovasi]);
     }
 
     /**
@@ -38,6 +41,7 @@ class InovasiController extends Controller
     public function store(Request $request)
     {
         $inovasi = new Inovasi();
+        $inovasi->user_id = Auth::user()->id;
         $inovasi->judul = $request->judul;
         $inovasi->writer = $request->writer;
         $inovasi->abstract = $request->abstract;

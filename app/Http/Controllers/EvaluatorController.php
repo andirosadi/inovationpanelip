@@ -17,11 +17,6 @@ class EvaluatorController extends Controller
      */
     public function index()
     {
-        // $evaluator = User::with('role')->where('role_id','3')
-        //   // ->join('inovasi', 'inovasi.user_id', '=', 'users.id')
-        //   // ->select('inovasi.judul')
-        //   ->get();
-        // return view('evaluator.userlist',compact('evaluator'));
         $evaluator = DB::table('inovasi')
           ->join('users', 'inovasi.user_id', '=', 'users.id')
           ->select('inovasi.*', 'users.name')

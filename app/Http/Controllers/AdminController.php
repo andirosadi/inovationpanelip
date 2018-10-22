@@ -18,8 +18,6 @@ class AdminController extends Controller
      */
     public function index()
     {
-        // $admin = User::get();
-        // return view('admin.userlist', compact('admin'));
         $admin = DB::table('users')
           ->join('roles', 'users.role_id', '=', 'roles.id')
           ->select('users.*', 'roles.full_name')
