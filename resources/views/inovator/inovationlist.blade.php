@@ -43,7 +43,7 @@
                                     <td>{{$data->status}}</td>
                                     <td>
                                       <div class="card-title m-b-0">
-                                        <a type="submit" href="{{route('inovasi.edit', $data->id)}}" class="btn btn-warning btn-sm">Revisi</a>
+                                        <a type="" href="{{route('inovasi.edit', $data->id)}}" class="btn btn-warning btn-sm">Revisi</a>
                                         <a href="" class="btn btn-primary btn-sm">Print</a>
                                         {{csrf_field()}}
                                       </div>

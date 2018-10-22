@@ -83,7 +83,7 @@
                                     <th scope="row"><b>{{$key+1}}</b></th>
                                     <td>{{$user->id}}</td>
                                     <td>{{$user->name}}</td>
-                                    <td>{{$user->role_id}}</td>
+                                    <td>{{$user->full_name}}</td>
                                     <td>{{$user->email}}</td>
                                     <td>
                                         <form action="{{url('admin/'.$user->id)}}" method="post">

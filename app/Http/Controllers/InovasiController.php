@@ -76,9 +76,7 @@ class InovasiController extends Controller
      */
     public function show($id)
     {
-        //Lihat Revisi
-        $inovasi = Inovasi::find($id);
-        return view('inovator.listrevisi', ['inovasi' => $inovasi]);
+
     }
 
     /**

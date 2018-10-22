@@ -29,7 +29,7 @@
                         @foreach($inovasi as $inovasis)
                         <form id="Buat inovasi" method="post" action="{{route('inovasi.update', $inovasis->id)}}" class="m-t-40">
                           {{csrf_field()}}
-                          {{method_field('PUT')}}
+                          {{method_field('PATCH')}}
                             <div>
                               <!-- Judul, Dibuat oleh, Abstract, Kata kunci -->
                                 <h3></h3>

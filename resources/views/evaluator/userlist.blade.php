@@ -25,27 +25,24 @@
                                 <thead>
                                   <tr>
                                     <th scope="col">No</th>
+                                    <th scope="col">Penulis</th>
                                     <th scope="col">Inovasi</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
                                     <th scope="col">Revisi</th>
-                                    <th scope="col">Result</th>
+                                    <th scope="col">Status</th>
                                     <th scope="col">Action</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   @if(count($evaluator) != 0)
-                                   @foreach($evaluator as $key => $user)
+                                   @foreach($evaluator as $key => $inovasi)
                                   <tr>
                                     <th scope="row">{{$key+1}}</th>
-                                    <td>{{$user->inovasi}}</td>
-                                    <td>{{$user->name}}</td>
-                                    <td>{{$user->email}}</td>
-                                    <td>{{$user->revisi}}</td>
-                                    <td>{{$user->result}}</td>
+                                    <td>{{$inovasi->name}}</td>
+                                    <td>{{$inovasi->judul}}</td>
+                                    <td>{{$inovasi->revisi}}</td>
+                                    <td>{{$inovasi->status}}</td>
                                     <td>
-                                      <a href=""  class="btn btn-warning btn-sm">Revisi</a>
-                                      <a href=""  class="btn btn-success btn-sm">Approve</a>
+                                      <a href="{{route('evaluators.edit', $inovasi->id)}}"  class="btn btn-warning btn-sm">Revisi</a>
                                       <a href=""  class="btn btn-primary btn-sm">Print</a>
                                     </td>
                                   </tr>
