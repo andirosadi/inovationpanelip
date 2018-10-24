@@ -75,25 +75,25 @@
                                 </section>
                                 <h3></h3>
                                 <section>
-                                    <label for="landasant">landasant</label>
+                                    <label for="landasant">Landasan Teori</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="landasant" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="rpcs">rpcs</label>
+                                    <label for="rpcs">RPCS Permasalahan</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="rpcs" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="idea">idea</label>
+                                    <label for="idea">Idea Generation</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="idea" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="tidea">tidea</label>
+                                    <label for="tidea">Tabel Idea</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <P><input type="file" class="form-control-file" id="exampleFormControlFile1" name="tidea"></P>
@@ -102,25 +102,25 @@
                                 </section>
                                 <h3></h3>
                                 <section>
-                                    <label for="tprio">tprio</label>
+                                    <label for="tprio">Tabel Prioritas</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <P><input type="file" class="form-control-file" id="exampleFormControlFile1" name="tprio"></P>
                                         </div>
                                     </div>
-                                    <label for="mprio">mprio</label>
+                                    <label for="mprio">Matrix Prioritas</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <P><input type="file" class="form-control-file" id="exampleFormControlFile1" name="mprio"></P>
                                         </div>
                                     </div>
-                                    <label for="pelaksanaan">pelaksanaan</label>
+                                    <label for="pelaksanaan">pelaksanaan Projek</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="pelaksanaan" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="manfaatf">manfaatf</label>
+                                    <label for="manfaatf">Manfaat Finansial</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="manfaatf" class="form-control" style="height: 300px"></textarea>
@@ -129,25 +129,25 @@
                                 </section>
                                 <h3></h3>
                                 <section>
-                                    <label for="roi">roi</label>
+                                    <label for="roi">Return of Invesment</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="roi" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="manfaatn">manfaatn</label>
+                                    <label for="manfaatn">Manfaat Non-Finansial</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="manfaatn" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="analisar">analisar</label>
+                                    <label for="analisar">Analisa Resiko</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="analisar" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="tanalisar">tanalisar</label>
+                                    <label for="tanalisar">Tabel Analisa Resiko</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <P><input type="file" class="form-control-file" id="exampleFormControlFile1" name="tanalisar"></P>
@@ -156,13 +156,13 @@
                                 </section>
                                 <h3></h3>
                                 <section>
-                                    <label for="kesimpulan">kesimpulan</label>
+                                    <label for="kesimpulan">Kesimpulan</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="kesimpulan" class="form-control" style="height: 300px"></textarea>
                                         </div>
                                     </div>
-                                    <label for="saran">saran</label>
+                                    <label for="saran">Saran</label>
                                     <div class="card">
                                         <div class="card-body">
                                             <textarea name="saran" class="form-control" style="height: 300px"></textarea>

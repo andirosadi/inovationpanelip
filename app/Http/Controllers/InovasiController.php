@@ -80,7 +80,9 @@ class InovasiController extends Controller
      */
     public function show($id)
     {
-
+      $inovasi = Inovasi::where('id', $id)
+      ->get();
+      return view('inovator.open', compact('inovasi'));
     }
 
     /**
@@ -143,4 +145,11 @@ class InovasiController extends Controller
     {
         //
     }
+    // public function print($id)
+    // {
+    //   $inovasi = Inovasi::all();
+    //   PDF::setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
+    //   $pdf = PDF::loadView('print.printinovation', $inovasi);
+    //   return $pdf->stream();
+    // }
 }

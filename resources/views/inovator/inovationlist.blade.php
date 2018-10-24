@@ -44,7 +44,7 @@
                                     <td>
                                       <div class="card-title m-b-0">
                                         <a type="" href="{{route('inovasi.edit', $data->id)}}" class="btn btn-warning btn-sm">Revisi</a>
-                                        <a href="" class="btn btn-primary btn-sm">Print</a>
+                                        <a href="{{route('inovasi.show', $data->id)}}" class="btn btn-primary btn-sm">Open</a>
                                         {{csrf_field()}}
                                       </div>
                                     </td>

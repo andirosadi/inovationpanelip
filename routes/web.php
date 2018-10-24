@@ -60,5 +60,7 @@ Route::get('/listrevisi', function(){
 });
 Route::resource('resetpassword','ResetpasswordController');
 
+// Route::get('inovasi/print', 'InovasiController@print');
+// Route::get('print/{id}', 'PrintController@printInovasi');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

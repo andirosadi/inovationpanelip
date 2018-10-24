@@ -53,7 +53,9 @@ class EvaluatorController extends Controller
      */
     public function show($id)
     {
-        //
+        $inovasi = Inovasi::where('id', $id)
+        ->get();
+        return view('evaluator.open', compact('inovasi'));
     }
 
     /**
@@ -65,7 +67,8 @@ class EvaluatorController extends Controller
     public function edit($id)
     {
       //Tambah Revisi
-      $inovasi = Inovasi::where('id', $id)->get();
+      $inovasi = Inovasi::where('id', $id)
+      ->get();
       return view('evaluator.addrevision', compact('inovasi'));
     }
 
@@ -83,7 +86,7 @@ class EvaluatorController extends Controller
       $inovasi->revisi = $request->revisi;
       $inovasi->status = $request->status;
       $inovasi->save();
-      return redirect()->route('evaluators.index')->with('alert-success', 'Berhasil menambahkan revisi');
+      return redirect('evaluators')->with('alert-success', 'Berhasil menambahkan revisi');
     }
 
     /**

@@ -43,8 +43,8 @@
                                     <td>{{$inovasi->status}}</td>
                                     <td>
                                       <div class="card-title m-b-0">
-                                      <a href="{{route('evaluators.edit', $inovasi->id)}}"  class="btn btn-warning btn-sm">Tambah Revisi</a>
-                                      <a href=""  class="btn btn-primary btn-sm">Print</a>
+                                      <a href="{{route('evaluators.edit', $inovasi->id)}}"  class="btn btn-warning btn-sm">Revisi</a>
+                                      <a href="{{route('evaluators.show', $inovasi->id)}}"  class="btn btn-primary btn-sm">Buka</a>
                                     </div>
                                     </td>
                                   </tr>

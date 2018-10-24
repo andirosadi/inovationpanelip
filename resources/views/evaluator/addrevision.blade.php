@@ -1,4 +1,4 @@
-@extends('admin.adminLayout.admin_design')
+@extends('evaluator.evaluatorLayout.evaluator_design')
 @section('content')
 <div class="row">
                     <div class="col-md-12">
